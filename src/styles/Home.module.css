@@ -1,0 +1,67 @@
+.container {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.trackerContainer {
+  background-color: white;
+  height: 40vh;
+  width: 50vw;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.trackerHeader {
+  background: linear-gradient(90deg, rgba(44,139,251,1) 0%, rgba(62,148,251,1) 35%, rgba(145,193,249,1) 100%);
+  height: 15%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.liveButton {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: 800;
+  border: none;
+  border-radius: 12px;
+  font-size: 1em;
+  padding: 2px 16px 2px 16px;
+  margin-left: 40px;
+}
+
+.timeOfDayContainer {
+  color: var(--primary-color);
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.medicineCircle {
+  background-color: green;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 8px;
+}
+
+.medicineCircleNoData {
+  background-color: var(--medicine-no-data-color);
+}
+
+.medicineCircleMissed {
+  background-color: var(--medicine-missed-color);
+}
+
+.medicineCircleLate {
+  background-color: var(--medicine-late-color);
+}
+
+.medicineCircleSuccess {
+  background-color: var(--medicine-success-color);
+}
