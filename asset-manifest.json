@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Pill-Tracker-POC-Kell/static/css/main.68eead2e.css",
-    "main.js": "/Pill-Tracker-POC-Kell/static/js/main.45bf2b00.js",
+    "main.js": "/Pill-Tracker-POC-Kell/static/js/main.e33de2cc.js",
     "static/js/787.7f0e6762.chunk.js": "/Pill-Tracker-POC-Kell/static/js/787.7f0e6762.chunk.js",
     "index.html": "/Pill-Tracker-POC-Kell/index.html",
     "main.68eead2e.css.map": "/Pill-Tracker-POC-Kell/static/css/main.68eead2e.css.map",
-    "main.45bf2b00.js.map": "/Pill-Tracker-POC-Kell/static/js/main.45bf2b00.js.map",
+    "main.e33de2cc.js.map": "/Pill-Tracker-POC-Kell/static/js/main.e33de2cc.js.map",
     "787.7f0e6762.chunk.js.map": "/Pill-Tracker-POC-Kell/static/js/787.7f0e6762.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68eead2e.css",
-    "static/js/main.45bf2b00.js"
+    "static/js/main.e33de2cc.js"
   ]
 }
