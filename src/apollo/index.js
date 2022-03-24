@@ -19,7 +19,7 @@ export const client = new ApolloClient({
 
 export const GET_MEDICINE_STATUSES = gql`
     query GetMedicineStatuses {
-        Default_Medicine {
+        Medicine {
             id
             medicineName
             pillNumber
@@ -30,19 +30,17 @@ export const GET_MEDICINE_STATUSES = gql`
 `;
 
 export const INSERT_MEDICINE_STATUS = gql`
-mutation InsertMedicineStatus($timeOfDay: String, $timeStatusRegistered: timetz, $takenStatus: String,
-    $medicineName: String, $pillNumber: Int
+mutation InsertMedicineStatus($timeOfDay: String, $takenStatus: String,
+    $medicineName: String, $pillNumber: numeric
     ) {
-    insert_Default_Medicine_one(object: {
+    insert_Medicine_one(object: {
       timeOfDay: $timeOfDay
-      timeStatusRegistered: $timeStatusRegistered,
       takenStatus: $takenStatus,
       medicineName: $medicineName,
       pillNumber: $pillNumber
     }) {
       id
       timeOfDay
-      timeStatusRegistered
       takenStatus
       medicineName
       pillNumber
@@ -51,8 +49,8 @@ mutation InsertMedicineStatus($timeOfDay: String, $timeStatusRegistered: timetz,
 `
 
 export const UPDATE_MEDICINE_STATUS = gql`
-mutation UpdateMedicineStatus($id: Int!, $takenStatus: String!) {
-    update_Default_Medicine_by_pk (
+mutation UpdateMedicineStatus($id: uuid!, $takenStatus: String!) {
+    update_Medicine_by_pk (
         pk_columns: {id: $id}
         _set: { takenStatus: $takenStatus }
         ) {

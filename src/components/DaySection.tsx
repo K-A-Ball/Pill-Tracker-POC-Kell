@@ -30,7 +30,7 @@ export default function DaySection({ timeOfDay, className }: Props) {
 
     const circleStatusLoggedAlready = (identifier: string) => {
         const [loggedTimeOfDay, loggedPillNumber] = identifier.split("-");
-        return data && data.Default_Medicine.filter((med: any) => med.timeOfDay === loggedTimeOfDay && med.pillNumber === parseInt(loggedPillNumber));
+        return data && data.Medicine.filter((med: any) => med.timeOfDay === loggedTimeOfDay && med.pillNumber === parseInt(loggedPillNumber));
     }
 
     const handleClick = (e: any) => {
@@ -52,7 +52,6 @@ export default function DaySection({ timeOfDay, className }: Props) {
             insertMedicineStatus({
                 variables: {
                     timeOfDay: timeOfDay,
-                    timeStatusRegistered: new Date().toISOString().replace("T", " ").replace("Z", ""),
                     takenStatus: statuses[newStatusIndex],
                     medicineName: "Levothyroxine",
                     pillNumber: identifier.split("-")[1]
